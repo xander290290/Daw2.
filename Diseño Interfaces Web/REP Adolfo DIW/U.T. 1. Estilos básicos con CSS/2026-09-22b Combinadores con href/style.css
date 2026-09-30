@@ -1,0 +1,17 @@
+:root {
+  font-size: 24px;
+}
+
+body {
+  background-color: lightcyan;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+/* El acento circunflejo ^ significa que la cadena debe empezar por ese patrón */
+a[href^="http:"] {
+  color: red;
+}

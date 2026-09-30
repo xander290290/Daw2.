@@ -1,0 +1,84 @@
+/* El operador : significa pseudoclase */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+/* El asterisco representa todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: solid 5px red;
+  min-height: 100dvh;
+  background-color: lightpink;
+}
+
+/* Selectores de etiqueta */
+h1 {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+}
+
+/* Selectores de identificador */
+#parrafoUno {
+  color: gold !important;
+}
+
+/* Selectores de clase */
+.parrafo-negrita {
+  font-weight: bold;
+}
+
+p#parrafoUno.parrafo-negrita {
+  color: darkorchid;
+  text-decoration: line-through;
+  text-transform: capitalize;
+}
+
+/* Un espacio entre dos selectores indica descendencia: hijo, nieto, bisnieto, ... */
+div p {
+  font-size: 1.5rem;
+}
+
+/* El operador > representa la relación hijo */
+div > p {
+  color: red;
+}
+
+/* El operador + representa al hermano siguiente o primer hermano (adjacent sibling) */
+#parrafoDos + * {
+  color: red;
+}
+
+/* El operador ~ representa a los hermanos siguientes (next siblings) */
+#parrafoCinco ~ p {
+  color: greenyellow;
+}
+
+/* El operador [] hace referencia a un atributo */
+[disabled] {
+  color: lightgray;
+}
+
+[data-inventado="si"] {
+  color: green;
+}
+
+[data-inventado="no"] {
+  color: blue;
+}
+
+select:disabled {
+  display: none;
+}
+
+/*
+
+Igual =: Coincidencia exacta.Ejemplo: [type="text"]Tilde e igual ~=: El valor es una lista de palabras separadas por espacios, y una de ellas coincide exactamente.Ejemplo: [class~="rojo"]Barra e igual |=: El valor es exactamente el texto o empieza por ese texto seguido de un guion (muy usado para idiomas).Ejemplo: [lang|="es"] (Coincide con "es" y "es-ES").Acento circunflejo e igual ^=: El atributo comienza exactamente con el valor especificado.Ejemplo: [href^="https://"]Dólar e igual $=: El atributo termina exactamente con el valor especificado.Ejemplo: [href$=".pdf"]Asterisco e igual *=: El atributo contiene la cadena de texto en cualquier parte.Ejemplo: [class*="icono-"]
+
+*/

@@ -1,2 +1,0 @@
-git pull https://github.com/adolfo-martin/DIW-26-27.git main --allow-unrelated-histories
-
