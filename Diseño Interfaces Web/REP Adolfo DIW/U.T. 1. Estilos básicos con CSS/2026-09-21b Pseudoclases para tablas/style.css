@@ -1,0 +1,39 @@
+:root {
+    font-size: 32px;
+}
+
+table,
+th,
+td {
+    border: solid 2px blue;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.25rem;
+}
+
+tr:first-child {
+    background-color: cyan !important;
+}
+
+tr:last-child {
+    background-color: magenta;
+}
+
+tr:nth-child(3n) {
+    background-color: lightcyan;
+}
+
+tr:nth-child(3n+1) {
+    background-color: rgb(169, 169, 241);
+}
+
+tr:nth-child(3n+2) {
+    background-color: rgb(93, 93, 245);
+}
+
+tr:nth-child(2n):hover {
+    font-weight: bold;
+    color: gold;
+}

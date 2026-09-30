@@ -1,0 +1,10 @@
+body {
+    background-color: antiquewhite;
+    background-image: url(./patron.avif);
+}
+
+ul {
+    background-color: chartreuse;
+    list-style-type: square;
+    list-style-image: url(./controlar.png);
+}

@@ -1,0 +1,44 @@
+body {
+    background-color: lightgreen;
+}
+
+h1 {
+    background-color: black;
+    color: gold;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#parrafo2 {
+    color: red;
+    font-weight: bold;
+}
+
+p#parrafo4 {
+    color: pink;
+}
+
+h1#parrafo4 {
+    background-color: red;
+}
+
+.primeros {
+    color: chocolate !important;
+    text-decoration: underline;
+}
+
+.ultimos {
+    color: magenta;
+    text-decoration: line-through;
+}
+
+p.ultimos {
+    text-transform: uppercase;
+    text-decoration: overline;
+}
