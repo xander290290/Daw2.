@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script type="module">
+        import {ciudades} from './ciudades.js';
+
+        const nlistado = document.getElementById('listado');
+
+        for (const ciudad of ciudades) {
+            const nInput = document.createElement('input');
+            const nLabel = document.createElement('label');
+            const nText = document.createTextNode(ciudad.nombre);
+            const salto = document.createElement('br');
+
+            nlistado.appendChild(nInput);
+            nlistado.appendChild(nLabel);
+            nLabel.appendChild(nText);
+
+            nInput.setAttribute('type', 'radio');
+            nInput.setAttribute('name', 'ciudad');
+            nInput.setAttribute('id', `eChk${ciudad.codigoPostal}`);
+
+            nLabel.setAttribute('for', `eChk${ciudad.codigoPostal}`);
+
+            nlistado.appendChild(salto);
+
+            if (ciudad.codigoPostal === "30800") {
+                nInput.setAttribute('checked', undefined);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Ciudades de Murcia</h1>
+
+    <form action="https://example.com/submit" method="POST" id="listado">
+    <!--
+        <input type="checkbox" name="lorca" id="eChkLorca">
+        <label for="eChkLorca">Lorca</label>
+
+        <input type="checkbox" name="aguilas" id="eChkAguilas">
+        <label for="eChkAguilas">Águilas</label> 
+    -->
+        <button type="submit">Enviar</button><br>
+    </form>
+</body>
+</html>
