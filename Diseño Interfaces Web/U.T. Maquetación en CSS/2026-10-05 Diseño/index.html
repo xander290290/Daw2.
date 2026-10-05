@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-content: center;
+        }
+
+        .boton-mensajes {
+            background-color: grey;
+            padding: 0.5rem 3rem;
+            border-radius: 1rem;
+        }
+
+        .boton-mensajes::after {
+            content: '8';
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+            place-content: center;
+            text-align: center;
+            width: 2rem;
+            height: 2rem;
+            display:inline-block;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div data-a=6, class="boton-mensajes">Ver mensajes</div>
+</body>
+</html>
