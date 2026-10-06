@@ -31,7 +31,6 @@ input[type="radio"][name="Bocadillo"] {
 input[type="radio"][name="Bocadillo"]::after {
     content: "😀";
     position: absolute;
-    align-items: center;
 }
 
 input[type="radio"][name="Bocadillo"]:checked::before {
