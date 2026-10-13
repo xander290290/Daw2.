@@ -1,0 +1,62 @@
+:root {
+    /* Verdes claros */
+    --verde-muy-claro: #DFF5E1;
+    --verde-menta: #A8E6CF;
+    --verde-pastel: #81C784;
+
+    /* Verdes principales */
+    --verde-principal: #4CAF50;
+    --verde-esmeralda: #2E8B57;
+    --verde-bosque: #228B22;
+
+    /* Verdes oscuros */
+    --verde-oscuro: #1B5E20;
+    --verde-profundo: #123524;
+
+    /* Verdes especiales */
+    --verde-oliva: #808000;
+    --verde-lima: #A3E635;
+
+    /* Colores complementarios para la web */
+    --fondo: #F1F8E9;
+    --fondo-secundario: #ECFDF5;
+    --superficie: #FFFFFF;
+    --texto: #26332A;
+    --texto-secundario: #5F7163;
+    --borde: #C8E6C9;
+
+    /* Estados */
+    --verde-hover: #1B5E20;
+    --verde-activo: #145218;
+    --verde-exito: #059669;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    background-color: var(--verde-hover);
+    text-align: center;
+}
+ 
+section {
+    background-color: #228B22;
+    color: white;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #A3E635;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+}

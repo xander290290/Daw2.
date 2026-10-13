@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación flex</title>
+    <style>
+        :root {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+
+            *, *::before, *::after {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                border: solid 3px black;
+                display: flex;
+
+                /*La dirección por defecto es row y la secundaria column*/
+                flex-direction: row;
+
+                /*Distribución en horizontal*/
+                justify-content: center;
+
+                /*Distribucion en vertical*/
+                align-items: center;
+            }
+
+            .caja {
+                background-color: blue;
+                width: 100px;
+                aspect-ratio: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="caja"></div>
+</body>
+</html>
