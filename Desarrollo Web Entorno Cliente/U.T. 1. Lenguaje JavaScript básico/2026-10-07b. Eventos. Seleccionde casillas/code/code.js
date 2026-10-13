@@ -28,5 +28,5 @@ function agregarImg () {
     const nTr = document.createElement('tr');
     const nTd = document.createElement('td');
 
-    nTable.appendChild(nTr);
+    nTable.appendChild(nTd);
 }
