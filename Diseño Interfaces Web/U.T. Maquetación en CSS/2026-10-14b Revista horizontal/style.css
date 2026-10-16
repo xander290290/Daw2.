@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+}
+
+article {
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    justify-items: center;
+}
+
+div {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    aspect-ratio: 1;
+    bottom: 50px;
+    height: 130px;
+}
+
+.img1{
+    background-image: url(./images/unnamed.jpg);
+}
+
+.img2 {
+    background-image: url(./images/unnamed\ \(1\).jpg);
+}
+
+.img3 {
+    background-image: url(./images/unnamed\ \(2\).jpg);
+}
+
+.img4 {
+    background-image: url(./images/unnamed\ \(3\).jpg);
+}
+
+.img5 {
+    background-image: url(./images/unnamed\ \(4\).jpg);
+}
